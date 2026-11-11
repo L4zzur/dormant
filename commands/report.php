@@ -54,7 +54,7 @@ function reportCommand(array $arguments = [])
 		"Total tasks: $totalTasks",
 		"Total completed tasks: $totalCompletedTasks",
 		"Min tasks in a day: $minTasks",
-		"Max tasks in a day: $maxTasks ?? 0",
+		"Max tasks in a day: $maxTasks",
 		"Average tasks per day: $avgTasks",
 		"Average completed tasks per day: $avgCompletedTasks",
 	];
