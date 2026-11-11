@@ -29,7 +29,7 @@ function requireTodos(?int $time = null): array
 
 	if (empty($todos))
 	{
-		echo "Nothing to do here" . PHP_EOL;
+		echo "Nothing to do here\n";
 		exit();
 	}
 
