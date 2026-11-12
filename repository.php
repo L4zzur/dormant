@@ -36,6 +36,13 @@ function requireTodos(?int $time = null): array
 	return $todos;
 }
 
+function addTodo(array $todo, ?int $time = null)
+{
+	$todos = getTodos($time);
+	$todos[] = $todo;
+	saveTodos($todos);
+}
+
 function saveTodos(array $todos, ?int $time = null): void
 {
 	$filePath = getFilePath($time);
