@@ -3,6 +3,7 @@
 /**
  * @var string $title
  * @var string $content
+ * @var array $menu
  */
 
 ?>
@@ -35,7 +36,8 @@
 
         <!-- Подвал -->
         <footer class="app-footer">
-            <?= date('Y') ?> Dormant
+            <?= view('components/menu', ['items' => $menu]); ?>
+            <span class="copyright"><?= date('Y'); ?> Dormant</span>
         </footer>
     </main>
 

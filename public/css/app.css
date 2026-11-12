@@ -40,12 +40,6 @@ body {
     margin: 40px auto;
 }
 
-.app-footer {
-    font-size: 0.85rem;
-    color: var(--sui-color-neutral-secondary);
-    text-align: center;
-}
-
 header h1 {
     margin-block: 0;
     font-size: 2rem;
@@ -69,4 +63,26 @@ header h1 {
 .card-option:has(.checkbox:checked) span {
     color: var(--sui-color-neutral-secondary);
     text-decoration: line-through;
+}
+
+.app-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+}
+
+.app-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    padding-top: 12px;
+    margin-top: 8px;
+    border-top: 1px solid var(--sui-color-outline-secondary);
+}
+
+.app-footer .copyright {
+    font-size: 0.8rem;
+    color: var(--sui-color-neutral-secondary);
 }

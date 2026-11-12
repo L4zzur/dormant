@@ -16,11 +16,18 @@
     </div>
 <?php endif; ?>
 
-<section class="todo-list">
-    <?php foreach ($todos as $todo):?>
-        <?= view("components/todo", ["todo" => $todo, "isHistory" => $isHistory]) ?>
-    <?php endforeach;?>
-</section>
+<?php if (empty($todos)): ?>
+    <div class="callout info">
+        <p>Nothing to see here!</p>
+    </div>
+<?php else: ?>
+    <section class="todo-list">
+        <?php foreach ($todos as $todo):?>
+            <?= view("components/todo", ["todo" => $todo, "isHistory" => $isHistory]) ?>
+        <?php endforeach;?>
+    </section>
+<?php endif; ?>
+
 
 <?php if (!$isHistory):?>
 <form action="/" method="POST" class="add-todo">
@@ -35,5 +42,3 @@
     <button type="submit" class="button">Add</button>
 </form>
 <?php endif; ?>
-
-<a class="button secondary" href="/report.php">View report</a>
