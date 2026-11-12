@@ -45,6 +45,25 @@ header h1 {
     font-size: 2rem;
 }
 
+.app-header {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.logo-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--sui-color-key-primary); /* терракотовый цвет балки с обложки! */
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.logo-link:hover {
+    opacity: 0.9;
+    transform: scale(1.08);
+}
+
 .todo-list {
     display: flex;
     flex-direction: column;

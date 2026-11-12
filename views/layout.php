@@ -29,6 +29,24 @@
     <main class="card app-container">
         <!-- Шапка -->
         <header class="app-header">
+            <a href="/" class="logo-link" title="На главную">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Башня маяка -->
+                    <path d="M9 21h6" />
+                    <path d="M10 9l-1 12" />
+                    <path d="M14 9l1 12" />
+                    <path d="M9 9h6" />
+                    <path d="M10 5h4" />
+                    <path d="M10 9V5" />
+                    <path d="M14 9V5" />
+                    <path d="M11 2h2" />
+                    <!-- Лучи света -->
+                    <path d="M3 8l3 1" />
+                    <path d="M21 8l-3 1" />
+                    <path d="M4 12l2-0.5" />
+                    <path d="M20 12l-2-0.5" />
+                </svg>
+            </a>
             <h1><?= $title; ?></h1>
         </header>
 
