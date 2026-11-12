@@ -10,5 +10,5 @@
 		<?= $todo["completed"] ? "checked" : "";?>
 		<?= $isHistory ? "disabled" : "";?>
 	>
-	<span><?= $todo["title"] ?></span>
+	<span><?= escape($todo["title"]) ?></span>
 </label>

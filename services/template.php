@@ -22,3 +22,8 @@ function view(string $path, array $vars = []): string
 
 	return ob_get_clean();
 }
+
+function escape(string $value): string
+{
+	return htmlspecialchars($value, ENT_QUOTES);
+}

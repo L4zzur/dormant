@@ -3,9 +3,18 @@
 /**
  * @var array $todos
  * @var bool $isHistory
+ * @var array $errors
  */
 
 ?>
+
+<?php if (!empty($errors)): ?>
+    <div class="callout destructive">
+        <?php foreach ($errors as $error): ?>
+            <p><?= escape($error); ?></p>
+        <?php endforeach; ?>
+    </div>
+<?php endif; ?>
 
 <section class="todo-list">
     <?php foreach ($todos as $todo):?>
